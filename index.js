@@ -17,8 +17,12 @@ const randomFunc = {
 
 
 generateEl.addEventListener('click', () => {
-const length = lengthEl.value;
-console.log(typeof length);
+const length = +lengthEl.value;
+const hasLower = lowercaseEl.checked;
+const hasUpper = uppercaseEl.checked;
+const hasNumber = numberEl.checked;
+const hasSymbol = symbolEl.checked;
+console.log(hasLower, hasUpper, hasNumber, hasSymbol);
 })
 
 // Generator function -https://www.net-comber.com/charset.html
