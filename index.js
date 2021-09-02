@@ -1,3 +1,27 @@
+// DOM elements
+const resultEl = document.getElementById('result')
+const lengthEl = document.getElementById('length')
+const uppercaseEl = document.getElementById('uppercase')
+const lowercaseEl = document.getElementById('lowercase')
+const numberEl = document.getElementById('numbers')
+const symbolEl = document.getElementById('symbols')
+const generateEl = document.getElementById('generate')
+const clipboardEl = document.getElementById('clipboard')
+
+const randomFunc = {
+    lower:getRandomLower,
+    upper:getRandomUpper,
+    number:getRandomNumber,
+    symbol:getRandomSymbol,
+}
+
+
+generateEl.addEventListener('click', () => {
+const length = lengthEl.value;
+console.log(typeof length);
+})
+
+// Generator function -https://www.net-comber.com/charset.html
 function getRandomLower(){
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
