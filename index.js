@@ -32,6 +32,22 @@ generateEl.addEventListener('click', () => {
     );
 });
 
+
+// copy password to clipboard
+clipboardEl.addEventListener('click', () => {
+    const textarea = document.createElement('textarea');
+    const password = resultEl.innerText;
+
+    if(!password) {
+        return;
+    }
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy')
+    textarea.remove();
+    alert('Password copied to clipboard');
+})
 // generate password function
 function generatePassword(lower, upper, number, symbol, length) {
     //     // add final pw to the pw var and return

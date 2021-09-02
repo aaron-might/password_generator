@@ -50,10 +50,10 @@ input[type=checkbox] {
     width:100%;
 }
 
-.result-container #result {
+/* .result-container #result {
     word-wrap: break-word;
     max-width: calc(100% - 40px);
-}
+} */
 
 .result-container .btn {
     font-size: 20px;
@@ -62,6 +62,7 @@ input[type=checkbox] {
     right:5px;
     height:40px;
     width:40px;
+    color:white;
 }
 
 .btn {
@@ -69,7 +70,7 @@ input[type=checkbox] {
     color:#fff;
     cursor:pointer;
     font-size:16px;
-    padding: 8px 12px;
+    padding: 6px 1px;
     background-color:#3B3B98;
 }  
 /* #clipboard{
@@ -79,6 +80,11 @@ input[type=checkbox] {
 .btn-large {
     display: block;
     width:100%;
+}
+.btn-large:hover{
+    color:rgb(255, 255, 255);
+    transform: translate3d(5px, -8px, 5px);
+    background-color:hsl(24, 85%, 50%);
 }
 .requirement {
     display: flex;
