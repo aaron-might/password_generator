@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     padding :10px;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
 p {
@@ -33,15 +33,19 @@ h2 {
     max-width:100%;
 }
 
+input[type=checkbox] {
+	margin-right: 0;
+}
+
 .result-container {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(10, 10, 10, 0.4);
     display:flex;
     justify-content: flex-start;
     align-items: center;
     position:relative;
     font-size:18px;
     letter-spacing: 1px;
-    padding: 12px 10px 10px;
+    padding: 12px 10px;
     height: 50px;
     width:100%;
 }
@@ -51,3 +55,41 @@ h2 {
     max-width: calc(100% - 40px);
 }
 
+.result-container .btn {
+    font-size: 20px;
+    position:absolute;
+    top:5px;
+    right:5px;
+    height:40px;
+    width:40px;
+}
+
+.btn {
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    padding: 8px 12px;
+    background-color:#3B3B98;
+}  
+/* #clipboard{
+    color:#fff;
+
+} */
+.btn-large {
+    display: block;
+    width:100%;
+}
+.requirement {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-between;
+    align-items:center;
+    margin:15px 0;
+}
+
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
+}
